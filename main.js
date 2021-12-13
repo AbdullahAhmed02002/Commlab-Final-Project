@@ -17,7 +17,7 @@ renderer.setPixelRatio( window.devicePixelRatio );
 renderer.setSize( window.innerWidth, window.innerHeight );
 
 // Moving camera from middle of scene to z-axis*/
-camera.position.setZ(30);
+camera.position.setZ(0);
 
 renderer.render( scene,camera );
 const geometry = new THREE.TorusGeometry(10,3,16,100)
@@ -106,7 +106,7 @@ moon.position.setX(-10);
 
 
 // changing positions when when user scrolls
-function moveCamera() {
+function moveCamera(scrollData) {
   console.log("hello"); // for testing
   const t = document.body.getBoundingClientRect().top; // gives dimensions of viewport and distance from top of webpage
   moon.rotation.x += 0.05;
@@ -119,7 +119,6 @@ function moveCamera() {
   camera.position.z = t * -0.01;
   camera.position.x = t * -0.0002;
   camera.rotation.y = t * -0.0002;
-
 }
 // calls function whenever user scrolls
 document.body.onscroll = moveCamera
