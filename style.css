@@ -4,7 +4,6 @@ canvas {
   left: 0;
 }
 
-
 main {
   width: 100vw;
   position: absolute;
@@ -99,4 +98,9 @@ canvas {
       padding: 0;
       grid-column: 2 / span 9;
       margin-bottom: 0px;
+    }
+
+    a {
+      color: white;
+      text-decoration: none;
     }

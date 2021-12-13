@@ -47,17 +47,17 @@
     <canvas id="bg"></canvas>
 
     <main>
-
+<button onclick="play();" style="height: 33px; border-radius: 8px; background: black; background-color:rgba(255,200,0,0.5);" > <b>Background music!</b> </button>
       <header>
         <h1 style="font-family: 'Kaisei Tokumin';"> Mohammad Abdullah Ahmed </h1>
-        <p style="font-family:'Tulpen One', cursive;font-size:60px"> Welcome to my website </p>
-        <p style="font-family: 'Frijole', cursive; color:red; font-size:38px;"> we all float down here...you'll float too </p>
+        <p style="font-family:'Tulpen One', cursive;font-size:63px"> Welcome to my website </p>
+        <p style="font-family: 'Frijole', cursive; color:red; font-size:38px; text-shadow: 3px 3px 5px #111111;"> we all float down here...you'll float too </p>
         <a href="https://www.facebook.com/RickAstleyFanClub/" class="fa fa-facebook"></a>
         <a href="https://twitter.com/rickastley?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" class="fa fa-twitter"></a>
         <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="fa fa-youtube"></a>
         <a href="https://www.instagram.com/officialrickastley/?hl=en" class="fa fa-instagram"></a>
         <blockquote>
-          <p style="color:aqua; font-size:23px;font-family:'Fuzzy Bubbles',cursive;"> maa9384@nyu.edu </p>
+          <p style="color:aqua; font-size:23px;font-family:'Fuzzy Bubbles',cursive;">   maa9384@nyu.edu </p>
         </blockquote>
 
 
@@ -70,13 +70,13 @@
         <h2 style="font-family: 'Dosis',sans-serif;"> <u> My Projects </h2> </u>
         <ul>
           <div style="font-family: 'Fuzzy Bubbles',cursive;">
-            <li> <p> <a href="https://drive.google.com/drive/u/1/folders/1dzz7N5vdjp11sEW1lRZ-kpV4AqqwHjmi"> 30 Minute Film Festival </p></a> </li>
+            <li> <p> <a href="https://drive.google.com/drive/u/1/folders/1dzz7N5vdjp11sEW1lRZ-kpV4AqqwHjmi";> 30 Minute Film Festival </p></a> </li>
             <p> Website hosting a short video about the places we come from. Shot on phone </p>
           </div>
 
             <div style="font-family: 'Fuzzy Bubbles', cursive;">
               <li> <p> <a href="https://aadilzakarya.github.io/commlab_comix/"> COMIX STRIP </p></a></li>
-              <p> <a href="https://aadilzakarya.github.io/commlab_comix/"> COMIX STRIP: GitHub </p></a>
+              <p><a href="https://aadilzakarya.github.io/commlab_comix/"> COMIX STRIP: GitHub </p></a>
               <p> A six panel original interactive comic where the user is a person invited to a party who must choose how they dress. With animations and sounds, the focus was on attempting to evolve the conventions of sequential art to the dynamic space of the web page </p>
             </div>
 
@@ -95,10 +95,20 @@
             </div>
 
           </ul> </section>
+          <section style="margin-top: 90px">
 
           <blockquote>
             <p style="color:gold; font-size:34px; font-family: 'Girassol', cursive;"> <b>Two roads diverged in a wood and I - I took the one less traveled by, and that has made all the difference. <br> - <i>Robert Frost </p> </i> </b>
           </blockquote>
+          </section>
 
   </body>
+  <script>
+function play() {
+  var audio = new Audio('https://cdn.pixabay.com/audio/2021/11/23/audio_98dcd8803b.mp3');
+  audio.play();
+  console.log("Yo") // to test
+}
+</script>
+
 </html>
